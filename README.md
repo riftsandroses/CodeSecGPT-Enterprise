@@ -65,12 +65,30 @@ CodeSecGPT-Enterprise is a VSCode extension that leverages the advanced capabili
 
 ## Usage
 
-1. Open your code file in VSCode.
-2. Select the line(s) of code that you want to fix.
-3. Right click the selected line(s) of code. A menu with various options will appear.
-4. Click on the option that says "Fix using CodeSecGPT"
-5. Review the suggested changes in the QuickPick Menu that appears.
-6. Click on "Replace" Button to replace with the current suggestion or click on "Cancel".
+Step-1: Open your code file in VSCode.
+   
+   ![1](https://github.com/riftsandroses/CodeSecGPT-Enterprise/assets/63180210/cd825c57-94b1-4012-ae5c-e07c5e63bc07)
+   
+Step-2: Select the line(s) of code that you want to fix.
+
+![2](https://github.com/riftsandroses/CodeSecGPT-Enterprise/assets/63180210/dfcb5e5d-ebc2-4b34-9bb4-6b2fbbdf3d66)
+
+Step-3: Right click the selected line(s) of code. A menu with various options will appear.
+
+![3](https://github.com/riftsandroses/CodeSecGPT-Enterprise/assets/63180210/10e343aa-ecab-4dd2-99fa-0223a9e93185)
+
+Step-4: Click on the option that says "Fix using CodeSecGPT"
+
+![4](https://github.com/riftsandroses/CodeSecGPT-Enterprise/assets/63180210/6a5a24f7-4130-4e9b-94bf-05b6f941c9f7)
+
+Step-5: Review the suggested changes in the QuickPick Menu that appears.
+
+![5](https://github.com/riftsandroses/CodeSecGPT-Enterprise/assets/63180210/8c9fa844-9027-4446-9546-41610efa97a0)
+
+Step-6: Click on "Replace" Button to replace with the current suggestion or click on "Cancel".
+
+![6](https://github.com/riftsandroses/CodeSecGPT-Enterprise/assets/63180210/0a29d8b2-fac0-463a-870e-4f1b2005f53a)
+
 
 ## Known Issues
 
