@@ -23,8 +23,9 @@ CodeSecGPT-Enterprise is a VSCode extension that leverages the advanced capabili
 
 **Prerequisites:**
 
-* Node.js and npm installed on your system.
-* A code editor or IDE of your choice.
+* Node.js, npm, and TypeScript installed on your system.
+* Change the OpenAI API Keys to your own in the source code.
+* Visual Studio Code or Visual Studio Code Insider on system.
 
 **Steps:**
 
