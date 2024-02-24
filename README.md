@@ -1,71 +1,83 @@
-# codesecgpt README
+**# CodeSecGPT-Enterprise README**
 
-This is the README for your extension "codesecgpt". After writing up a brief description, we recommend including the following sections.
+**Secure your code with the power of OpenAI's GPT-3.5-Turbo!**
 
-## Features
+CodeSecGPT-Enterprise is a VSCode extension that leverages the advanced capabilities of OpenAI's GPT-3.5-Turbo language model to help you identify and fix security vulnerabilities in your code. With its intuitive interface and seamless integration, CodeSecGPT-Enterprise empowers you to write more secure code and streamline your development workflow.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+**## Features**
 
-For example if there is an image subfolder under your extension project workspace:
+* **AI-powered vulnerability detection:** CodeSecGPT-Enterprise analyzes your code using GPT-3.5-Turbo, pinpointing potential security issues based on its vast knowledge of code patterns and common vulnerabilities.
+* **Actionable suggestions:** CodeSecGPT-Enterprise doesn't just highlight vulnerabilities; it provides tailored suggestions for fixing them, guiding you towards more secure coding practices.
+* **Seamless integration:** CodeSecGPT-Enterprise works directly within your VSCode environment, offering real-time feedback as you code.
+* **Customization options:** You can fine-tune the extension's behavior to match your specific coding style and preferences.
+* **Change logging:** All code modifications suggested by CodeSecGPT-Enterprise and applied by the user are automatically logged for traceability and audit purposes.
 
-\!\[feature X\]\(images/feature-x.png\)
+**## Requirements**
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+* **Visual Studio Code:** Ensure you have the latest version of VSCode installed.
+* **OpenAI API access:** You'll need an OpenAI API key to enable communication with the GPT-3.5-Turbo model.
 
-## Requirements
+**## Installation**
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+**Compiling and Installing the VSIX Binary:**
 
-## Extension Settings
+**Prerequisites:**
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+* Node.js and npm installed on your system.
+* A code editor or IDE of your choice.
 
-For example:
+**Steps:**
 
-This extension contributes the following settings:
+1. **Clone the repository:**
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+   ```bash
+   git clone https://github.com/riftsandroses/CodeSecGPT-Enterprise
+   ```
 
-## Known Issues
+2. **Navigate to the project directory:**
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+   ```bash
+   cd CodeSecGPT-Enterprise
+   ```
 
-## Release Notes
+3. **Install dependencies:**
 
-Users appreciate release notes as you update your extension.
+   ```bash
+   npm install
+   ```
 
-### 1.0.0
+4. **Build the VSIX package:**
 
-Initial release of ...
+   ```bash
+   npm run package
+   ```
 
-### 1.0.1
+   This will create a VSIX file in the `dist` folder.
 
-Fixed issue #.
+5. **Install the VSIX package:**
 
-### 1.1.0
+      - Open the VSCode Extensions view (**Ctrl+Shift+X** or **Cmd+Shift+X** on macOS).
+      - Click the three dots (...) in the top right corner and select "Install from VSIX...".
+      - Select the VSIX file you created in step 4.
 
-Added features X, Y, and Z.
+**## Usage**
 
----
+1. Open your code file in VSCode.
+2. Select the line(s) of code that you want to fix.
+3. Right click the selected line(s) of code. A menu with various options will appear.
+4. Click on the option that says "Fix using CodeSecGPT"
+5. Review the suggested changes in the QuickPick Menu that appears.
+6. Click on "Replace" Button to replace with the current suggestion or click on "Cancel".
 
-## Following extension guidelines
+**## Known Issues**
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+ **Accuracy may vary:** While GPT-3.5-Turbo is highly advanced, it's still under development, and its accuracy in detecting vulnerabilities can vary depending on several factors, including:
+    - Code complexity: The model may struggle with highly complex or obfuscated code, potentially leading to missed vulnerabilities or false positives.
+    - Data availability: The model's training data plays a significant role in its performance. If the training data lacked specific vulnerabilities or coding styles, the model might be less effective in detecting them.
+    - Temperature setting: The temperature parameter in GPT-3.5-Turbo controls the randomness of its outputs. Higher temperatures can lead to more creative and diverse suggestions, but also potentially increase the risk of inaccurate or irrelevant recommendations. It's crucial to experiment and find the optimal temperature setting for your specific needs and codebase.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+**## Following Extension Guidelines**
 
-## Working with Markdown
+This extension adheres to the best practices outlined in the VSCode extension guidelines: [https://code.visualstudio.com/api/references/extension-guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**## Enjoy
