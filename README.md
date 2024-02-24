@@ -1,4 +1,4 @@
-# CodeSecGPT-Enterprise (Visual Studio Code Extension)
+# CodeSecGPT - Enterprise (Visual Studio Code Extension)
 
 **Secure your code with the power of OpenAI's GPT-3.5-Turbo!**
 
@@ -7,9 +7,13 @@ CodeSecGPT-Enterprise is a VSCode extension that leverages the advanced capabili
 ## Features
 
 * **AI-powered vulnerability detection:** CodeSecGPT-Enterprise analyzes your code using GPT-3.5-Turbo, pinpointing potential security issues based on its vast knowledge of code patterns and common vulnerabilities.
+  
 * **Actionable suggestions:** CodeSecGPT-Enterprise doesn't just highlight vulnerabilities; it provides tailored suggestions for fixing them, guiding you towards more secure coding practices.
+  
 * **Seamless integration:** CodeSecGPT-Enterprise works directly within your VSCode environment, offering real-time feedback as you code.
+  
 * **Customization options:** You can fine-tune the extension's behavior to match your specific coding style and preferences.
+  
 * **Change logging:** All code modifications suggested by CodeSecGPT-Enterprise and applied by the user are automatically logged for traceability and audit purposes.
 
 ## Requirements
@@ -18,8 +22,6 @@ CodeSecGPT-Enterprise is a VSCode extension that leverages the advanced capabili
 * **OpenAI API access:** You'll need an OpenAI API key to enable communication with the GPT-3.5-Turbo model.
 
 ## Installation
-
-**Compiling and Installing the VSIX Binary:**
 
 **Prerequisites:**
 
@@ -50,7 +52,7 @@ CodeSecGPT-Enterprise is a VSCode extension that leverages the advanced capabili
 4. **Build the VSIX package:**
 
    ```bash
-   npm run package
+   tsc -p . && vsce package
    ```
 
    This will create a VSIX file in the `dist` folder.
