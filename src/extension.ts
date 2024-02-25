@@ -3,6 +3,22 @@ import * as fs from 'fs';
 import OpenAI from 'openai';
 
 const prompt = 'ENTER_THE_PRE-DETERMINED_PROMPT_HERE';
+
+let apiKey: string | undefined;
+async function ensureApiKey(): Promise<string> {
+	if(!apiKey) {
+		apiKey = await vscode.window.showInputBox({
+			prompt: 'Enter your OpenAI API Key: ',
+			placeHolder: 'Enter your API Key here'
+		});
+
+		if(!apiKey) {
+			throw new Error('API Key is required');
+		}
+	}
+	return apiKey;
+}
+
 export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand('codesecgpt.useCodeSecGPT', async () => {
 		const editor = vscode.window.activeTextEditor;
@@ -22,7 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
 		};
 		appendLog(`Selected text: ${selectedText}`);
 		try {
-			const apiKey = 'ENTER_OPENAI_API_KEY_HERE';
+			const apiKey = await ensureApiKey();
 			const openai = new OpenAI({apiKey});
 			const chatCompletion = await openai.chat.completions.create({
 				model: "gpt-3.5-turbo",
