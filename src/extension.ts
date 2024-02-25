@@ -28,8 +28,6 @@ export function activate(context: vscode.ExtensionContext) {
 
 		const selection = editor.selection;
 		const selectedText = editor.document.getText(selection);
-		const message = "Connecting to CodeSecGPT........";
-		vscode.window.showInformationMessage(message);
 		const finalPrompt = prompt + selectedText;
 
 		const logFilePath = `${context.extensionPath}/extension.log`;
@@ -39,6 +37,10 @@ export function activate(context: vscode.ExtensionContext) {
 		appendLog(`Selected text: ${selectedText}`);
 		try {
 			const apiKey = await ensureApiKey();
+
+			const ConnectingMessage = "Connecting to CodeSecGPT........";
+			vscode.window.showInformationMessage(ConnectingMessage);
+
 			const openai = new OpenAI({apiKey});
 			const chatCompletion = await openai.chat.completions.create({
 				model: "gpt-3.5-turbo",
