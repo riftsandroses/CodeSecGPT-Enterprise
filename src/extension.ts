@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import * as fs from 'fs';
 import OpenAI from 'openai';
 
-const prompt = 'ENTER_THE_PRE-DETERMINED_PROMPT_HERE';
+const prompt = 'Fix the vulnerabilities in this code and return only the fixed code as output without any description: ';
 
 let apiKey: string | undefined;
 async function ensureApiKey(): Promise<string> {
