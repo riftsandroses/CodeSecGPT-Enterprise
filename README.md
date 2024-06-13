@@ -1,6 +1,6 @@
 # CodeSecGPT - Enterprise (Visual Studio Code Extension)
 
-![coDESECGPT](https://github.com/riftsandroses/CodeSecGPT/assets/63180210/ba888f68-0b7a-4772-b1a2-836795d6b16a)
+![coDESECGPT-ezgif com-crop](https://github.com/riftsandroses/CodeSecGPT/assets/63180210/546c2285-965f-4201-bcb9-38ee9e5a8df6)
 
 **Secure your code with the power of OpenAI's GPT-3.5-Turbo!**
 
