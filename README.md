@@ -1,5 +1,7 @@
 # CodeSecGPT - Enterprise (Visual Studio Code Extension)
 
+![coDESECGPT](https://github.com/riftsandroses/CodeSecGPT/assets/63180210/ba888f68-0b7a-4772-b1a2-836795d6b16a)
+
 **Secure your code with the power of OpenAI's GPT-3.5-Turbo!**
 
 CodeSecGPT-Enterprise is a VSCode extension that leverages the advanced capabilities of OpenAI's GPT-3.5-Turbo language model to help you identify and fix security vulnerabilities in your code. With its intuitive interface and seamless integration, CodeSecGPT-Enterprise empowers you to write more secure code and streamline your development workflow.
